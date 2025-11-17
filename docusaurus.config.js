@@ -85,13 +85,6 @@ const config = {
           items: [{ label: "Get Started", to: "/" }],
         },
         {
-          title: "Community",
-          items: [
-            { label: "Discord", href: "https://discord.gg/k5WPk93K7b" },
-            { label: "Feedback", href: "https://feedback.mwc.redstudio.dev" },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
