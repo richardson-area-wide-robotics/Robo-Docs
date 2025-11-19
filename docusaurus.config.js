@@ -63,7 +63,7 @@ const config = {
       hideOnScroll: true,
       logo: {
         alt: "Robotics Logo",
-        src: "img/logo.webp",
+        src: "img/logo.png",
       },
       style: "dark",
       // 🔵🔴 Blue & Red theme for navbar
@@ -100,7 +100,7 @@ const config = {
       ],
       logo: {
         alt: "Robotics Logo",
-        src: "img/logo.webp",
+        src: "img/logo.png",
         width: 64,
         height: 64,
       },
