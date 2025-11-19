@@ -41,6 +41,8 @@ The command that runs automatically when no other command is using the subsystem
 
 ## Telemetry / Logging
 Data sent from the robot for debugging:
+
+### Examples:
 * Motor currents
 * Sensor values
 * Robot pose
