@@ -1,4 +1,4 @@
-# Creating a subsystem
+# Creating a Subsystem
 
 ## SingleMotorSubsystem 
 I need a subsystem now! This class allows you to make a subsystem with only one motor. It allows you to quickly make something for testing with simple speed control

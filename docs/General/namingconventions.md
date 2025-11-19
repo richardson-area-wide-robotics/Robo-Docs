@@ -57,6 +57,13 @@ Variables use **camelCase** and should describe what the value represents.
 ---
 
 ## Constants
+
+:::info
+
+For explanation on constants in a FRC context, look [here](https://richardson-area-wide-robotics.github.io/Robo-Docs/FRC/Starting%20Out/constants)
+
+:::
+
 Constants (variables that won't change) should be **ALL_CAPS_WITH_UNDERSCORES**.
 
 ### Examples:
