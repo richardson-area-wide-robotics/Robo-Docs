@@ -143,5 +143,5 @@ li.menu__list-item.hacks-folder::before {
 
 /* When navbar is hidden from scrolling */
 .navbar.navbar--hidden .navbar__brand img {
-  content: url("/Robo-Docs/img/logo-blue.png");
+    content: url("/img/logo-blue.png");
 }
