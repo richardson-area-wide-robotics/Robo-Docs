@@ -38,7 +38,7 @@ footer.footer--dark {
 [data-theme="dark"] {
 	background-color: #111111;
 
-	/* 🔵 Blue palette stays the same for consistency */
+	/* Blue palette stays the same for consistency */
 	--ifm-color-primary: #3b82f6;
 	--ifm-color-primary-dark: #2563eb;
 	--ifm-color-primary-darker: #1d4ed8;
@@ -47,13 +47,13 @@ footer.footer--dark {
 	--ifm-color-primary-lighter: #93c5fd;
 	--ifm-color-primary-lightest: #bfdbfe;
 
-	/* 🔵 Navbar Dark */
+	/* Navbar Dark */
 	nav.navbar--fixed-top {
 		background-color: #1e3a8a;
 		color: #ffffff;
 	}
 
-	/* 🔵 Footer Dark */
+	/* Footer Dark */
 	footer.footer--dark {
 		background-color: #1e3a8a;
 		color: #ffffff;
@@ -105,7 +105,7 @@ li.menu__list-item.hacks-folder::before {
 	pointer-events: none;
 }
 
-/* region Assets — 🔵 Blue Badge */
+/* Assets — Blue Badge */
 
 li.menu__list-item.assets::before,
 li.menu__list-item.assets-folder::before {
@@ -120,9 +120,7 @@ li.menu__list-item.assets-folder::before {
 	right: 2rem;
 }
 
-/* endregion */
-
-/* region Hacks — 🔴 Red Badge */
+/* Hacks — Red Badge */
 
 li.menu__list-item.hacks::before,
 li.menu__list-item.hacks-folder::before {
@@ -139,3 +137,11 @@ li.menu__list-item.hacks-folder::before {
 
 /* endregion */
 
+.navbar__brand img {
+  transition: opacity 0.2s ease;
+}
+
+/* When navbar is hidden from scrolling */
+.navbar.navbar--hidden .navbar__brand img {
+  content: url("/Robo-Docs/img/logo-blue.png");
+}
