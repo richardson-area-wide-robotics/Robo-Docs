@@ -137,10 +137,6 @@ li.menu__list-item.hacks-folder::before {
 
 /* endregion */
 
-.navbar__brand img {
-  transition: opacity 0.2s ease;
-}
-
 /* When navbar is hidden from scrolling */
 .navbar.navbar--hidden .navbar__brand img {
     content: url("/img/logo-blue.png");
