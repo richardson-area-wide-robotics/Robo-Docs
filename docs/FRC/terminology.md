@@ -60,3 +60,7 @@ The communication system that WPILib uses to share data between:
 * The Driver Station
 * Shuffleboard
 * Vision systems (Limelight, PhotonVision, etc.)
+
+## The Game Tools 
+The "Game Tools" provide components that help us manage and communicate with robots. It includes the [FRC Driver Station](https://docs.wpilib.org/en/stable/docs/software/driverstation/driver-station.html) and other required apps for working with FRC. You can download the Game Tools [here](https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#553883). Make sure to select the correct FRC year, Ex: "2025", "2024".
+
