@@ -24,7 +24,7 @@ If you can see this message i haven't finished the docs yet
    1. Most vendors for PhotonVision cameras have an image already built (Ex: Luma P1: `photonvision-v2026.1.1-rc-2-linuxarm64_luma_p1.img.xz`)
    2. The image should match whatever version you are using in your code. (Ex: v2026.1.1-rc-2)
 2. Follow the flashing intrusions for your device
-   1. Your will probably need [balenaEtcher](https://etcher.balena.io/)
+   1. You will probably need [balenaEtcher](https://etcher.balena.io/)
 3. Connect the camera to the wiring of the robot
 4. Open the PhotonVision dashboard (by default at: `http://photonvision.local:5800`)
    1. Make sure you're connected over WiFi to the Robots Radio 

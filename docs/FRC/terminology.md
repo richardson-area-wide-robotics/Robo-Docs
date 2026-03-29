@@ -51,7 +51,7 @@ Data sent from the robot for debugging:
 Being able to recognize [April Tags](https://frcdocs.wpi.edu/en/stable/docs/software/vision-processing/apriltag/index.html) and use that data in a helpful way
 
 ## Odometry
-The robot’s measured position on the field using encoders and gyros.
+The robot’s measured position on the field using encoders and gyros. Also called Pose
 
 ## NetworkTables
 The communication system that WPILib uses to share data between:
