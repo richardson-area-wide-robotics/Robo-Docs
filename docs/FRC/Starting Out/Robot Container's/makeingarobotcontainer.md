@@ -10,7 +10,7 @@ RobotContainer's control the functionality of a robot per team.
 
 1. Implement `IRobotContainer` and set up the required methods (createContainer, simulationPeriodic, and getAutonomousCommand, etc).
 2. Annotate with `@NoArgsConstructor(access = AccessLevel.PRIVATE)`, as Robot Containers should not have a public constructor. (createContainer() will be used to create a new container).
-3. Annotate the class with @Robot; this will automatically set the robot container to be used based on the team number. Example: (@Robot(team = 1745) for team 1745, etc).
+3. Annotate the class with `@Robot`; this will automatically set the robot container to be used based on the team number. Example: (`@Robot(team = 1745)` for team 1745, etc).
    1. The only team number you cannot use is `0`, as that is the `RobotContainerRegistry`'s fallback. If you want to make a test bot, use `9991`  
 
 ## Why a Private Constructor?

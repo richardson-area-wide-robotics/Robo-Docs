@@ -10,7 +10,7 @@ Here be dragons! The documentation for PhotonVision is honestly pretty bad if yo
 :::
 :::warning
 
-If you can see this message i haven't finished the docs yet 
+If you can see this message I haven't finished the docs yet 
 
 :::
 
