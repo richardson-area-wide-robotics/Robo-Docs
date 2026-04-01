@@ -10,10 +10,10 @@ To slice models for printing on a Bambu Lab device, it is recommended to use [Or
 ### Prepare
 
 <AssetDisplay
-imgSrc="https://raw.githubusercontent.com/Cubed-Development/Modern-Warfare-Cubed/main/assets/branding/MWC%20Banner%201920x481.png"
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/orca_prepare.png"
 name="MWC Banner 1920x481"
 fileType="PNG (.png)"
-downloadUrl="https://raw.githubusercontent.com/Cubed-Development/Modern-Warfare-Cubed/main/assets/branding/MWC%20Banner%201920x481.png"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/orca_prepare.png"
 />
 
 
