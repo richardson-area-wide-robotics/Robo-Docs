@@ -2,6 +2,10 @@
 
 We use custom gradle tasks to automate various parts of the robot. 
 
+### Creating your own tasks
+As of 2026, any `.gradle` file inside of `gradle/tasks/` will automatically be added to the project. It is recommended to use one file per task to keep everything organized.
+You can check out the [Gradle Docs](https://docs.gradle.org/current/userguide/implementing_custom_tasks.html) for the basics of making tasks. 
+ 
 
 ## `codeStats`
 The `codeStats` gradle task automates counting the files, lines of code, and the number/type of classes 
