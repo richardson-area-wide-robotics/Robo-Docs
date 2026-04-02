@@ -1,5 +1,4 @@
 import AssetDisplay from '@site/src/components/AssetDisplay';
-import KeyBind from '@site/src/components/KeyBind';
 
 # Using IntelliJ IDEA in FRC
 
@@ -18,11 +17,11 @@ If you use `yay`, you can install it with `yay intellij-idea-community-edition`
 Open this year's code with `Open...` and wait for the import to finish. 
 
 ### Getting the correct Java version
-Now, click the 3 horizontal lines, then click `Project Structure`. <KeyBind keys="Ctrl + Alt + Shift + S" />  Under the `Project Settings` section on the left, click `Project`. 
+Now, click the 3 horinotal lines, then click `Project Structure`. Under the `Project Settings` section on the left, click `Project`. 
 
 Open the `SDK` drop down and chose `Download JDK...` For `Version` say `17` and `Vendor` say `Microsoft OpenJDK` 
 
-Click `Download` and wait for the installation to finish. Ensure that the `Language level` is `SDK default`, then click `Apply`
+Click `Download` and wait for the install to finish. Ensure that the `Language level` is `SDK default`, then click `Apply`
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/idea_javadownload.png"
@@ -32,7 +31,7 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
 />
 
 ### Making sure the compiler uses the correct Java version
-Now, click the 3 horizontal lines, then click `Settings`<KeyBind keys="Ctrl + Alt + S" />. Search for `Gradle` and ensure that `Gradle JVM` says `Project SDK`. Click `Apply`.
+Now, click the 3 horizontal lines, then click `Settings`. Search for `Gradle` and ensure that `Gradle JVM` says `Project SDK`. Click `Apply`.
 
 ### Adding required gradle tasks
 Click the `Current File` dropdown in the top right, and click `Edit Configurations`
