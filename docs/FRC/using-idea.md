@@ -1,9 +1,11 @@
-# Using Intelij IDEA in FRC
+import AssetDisplay from '@site/src/components/AssetDisplay';
 
-I personally prefer using [Intelij IDEA](https://www.jetbrains.com/idea/) over Visual Studio Code (and so do 78% of Java developers according to their website), but it requires a little more setup to get it working
+# Using IntelliJ IDEA in FRC
+
+I personally prefer using [IntelliJ IDEA](https://www.jetbrains.com/idea/) over Visual Studio Code (and so do 78% of Java developers according to their website), but it requires a little more setup to get it working
 
 ## Installing:
-Head over to the [download page](https://www.jetbrains.com/idea/download) for Intelij IDEA, you will want to install Community Edition, unless you plan on paying for Ultimate 
+Head over to the [download page](https://www.jetbrains.com/idea/download) for IntelliJ IDEA, you will want to install Community Edition, unless you plan on paying for Ultimate 
 
 ::info
 
