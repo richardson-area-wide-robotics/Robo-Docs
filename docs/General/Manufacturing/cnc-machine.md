@@ -29,7 +29,7 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
 />
 
 ## Connecting to the CNC
-Go to the HP Labtop on the black stand next where the power controls are. Open it, log in (the user should have no password), and search for `CNC12 Mill`. This will the two windows needed for using the CNC.
+Go to the HP Labtop on the black stand next where the power controls are. Open it, log in (the user should have no password), and search for `CNC12 Mill`. This will open the two windows needed for using the CNC.
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_firststartup.PNG"
