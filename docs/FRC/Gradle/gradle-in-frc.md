@@ -52,8 +52,21 @@ When you add a dependency with implementation the library is:
 
 Example:
 ```groovy
+// Depend on a jar hosted on the internet 
 implementation 'com.github.lasarobotics:PurpleLib:2025.0.6'
 ```
+```groovy
+// Depend on a local jar
+implementation files('libs/PurpleLibLocal.jar')
+```
+
+For each `implementation`, it is recommend to add a comment explaining where we are depending on this. 
+Example (from 2026):
+```groovy
+// Apache (For PurpleLib)
+implementation 'org.apache.commons:commons-math3:3.+'
+```
+
 
 ##### annotationProcessor
 `annotationProcessor` is for compile-time code generation.
@@ -61,7 +74,7 @@ implementation 'com.github.lasarobotics:PurpleLib:2025.0.6'
 Annotation processors:
 
 * Run only during compilation
-* Read annotations (like @Getter, @AutoLog, etc.)
+* Read annotations (like `@Getter`, `@AutoLog`, etc.)
 * Generate or modify Java code before compilation finishes
 * Are NOT included in the final robot program
 
