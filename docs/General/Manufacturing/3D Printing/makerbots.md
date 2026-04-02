@@ -1,3 +1,6 @@
+import AssetDisplay from '@site/src/components/AssetDisplay';
+
+
 # 3D Printing with a MakerBot
 
 ## Slicing 
