@@ -1,6 +1,6 @@
-# The Periodic Functions
+# Robot Container Methods
 
-Each robot container provides many methods that you can override to do stuff
+Each robot container provides many methods that you can override to do stuff.
 
 ## simulationPeriodic
 `simulationPeriodic` is ran periodically when the simulator is open. You should use this for information you only want to display in sim
@@ -13,3 +13,9 @@ Each robot container provides many methods that you can override to do stuff
 
 ## teleopPeriodic
 `teleopPeriodic` is ran periodically during the teleop period, and when the robot is enabled. You should use this for doing everything during teleop (Driving, etc) 
+
+## robotInit
+`robotInit` is ran when the robot initializes for the first time.
+
+## autonomousInit
+`autonomousInit` is ran at the start of the autonomous period.

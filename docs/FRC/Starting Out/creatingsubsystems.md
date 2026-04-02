@@ -10,7 +10,7 @@ public SingleMotorSubsystem KITBOT_SHOOTER = new SingleMotorSubsystem(10);
 ```
 
 ## DashboardSubsystem 
-I need a subsystem but i need more control over everything. This class allows you to make a subsystem that uses @DashboardVariable and @NamedAuto. All subsystems should extend from this.
+I need a subsystem but I need more control over everything. This class allows you to make a subsystem that uses `@DashboardVariable` and `@NamedAuto`. All subsystems should extend from this.
 
 ### Example:
 ```java
