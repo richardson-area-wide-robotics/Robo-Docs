@@ -8,8 +8,6 @@ Consistent naming helps keep the robot code clean, readable, and easy for new pr
 * Avoid [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)). Constants should be defined and named clearly.
 * Keep names consistent across subsystems and commands.
 
----
-
 ## Classes
 Classes should use **PascalCase**.
 
@@ -17,8 +15,6 @@ Classes should use **PascalCase**.
 * `Drivetrain`
 * `ShooterSubsystem`
 * `RobotContainer`
-
----
 
 ## Enums
 Use **PascalCase** for the enum name like classes and **ALL_CAPS** for each enum value.
@@ -31,8 +27,6 @@ public enum RobotMode {
     AUTONOMOUS
 }
 ```
-
----
 
 ## Methods
 Methods use **camelCase** and should generally be verbs.
@@ -54,8 +48,6 @@ Variables use **camelCase** and should describe what the value represents.
 * `armPosition`
 * `hasNote`
 
----
-
 ## Constants
 
 :::info
@@ -71,7 +63,6 @@ Constants (variables that won't change) should be **ALL_CAPS_WITH_UNDERSCORES**.
 * `ARM_UP_POSITION`
 * `DEFAULT_SHOOTER_RPM`
 
----
 
 ## Subsystems
 Subsystem class names should end with **Subsystem** and use **PascalCase**.
@@ -82,8 +73,6 @@ Subsystem class names should end with **Subsystem** and use **PascalCase**.
 * `ElevatorSubsystem`
 
 Final Subsystem fields in the `IRobotContainer` should follow Constants case shown above.
-
----
 
 ## Commands
 Command names should end with **Command** and use **PascalCase**.

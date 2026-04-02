@@ -1,5 +1,5 @@
 # Vision
-[Vision](https://richardson-area-wide-robotics.github.io/Robo-Docs/FRC/terminology#vision] allows) the robot to better understand where is it on the field.
+[Vision](https://richardson-area-wide-robotics.github.io/Robo-Docs/FRC/terminology#vision) allows the robot to better understand where is it on the field.
 
 ## Setting Up
 
