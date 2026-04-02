@@ -37,8 +37,6 @@ Methods use **camelCase** and should generally be verbs.
 * `updateOdometry()`
 * `runIntake()`
 
----
-
 ## Variables
 Variables use **camelCase** and should describe what the value represents.
 

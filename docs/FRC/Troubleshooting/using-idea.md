@@ -7,11 +7,11 @@ I personally prefer using [IntelliJ IDEA](https://www.jetbrains.com/idea/) over 
 ## Installing:
 Head over to the [download page](https://www.jetbrains.com/idea/download) for IntelliJ IDEA, you will want to install Community Edition, unless you plan on paying for Ultimate 
 
-::info
+:::info
 
 If you use `yay`, you can install it with `yay intellij-idea-community-edition`
 
-::
+:::
 
 ## Configuring
 Open this year's code with `Open...` and wait for the import to finish. 
