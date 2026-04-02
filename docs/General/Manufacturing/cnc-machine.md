@@ -32,10 +32,10 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
 Go to the HP Labtop on the black stand next where the power controls are. Open it, log in (the user should have no password), and search for `CNC12 Mill`. This will the two windows needed for using the CNC.
 
 <AssetDisplay
-imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_firststartup.png"
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_firststartup.PNG"
 name="CNC first startup"
 fileType="PNG (.png)"
-downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_firststartup.png"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_firststartup.PNG"
 />
 
 ## Getting ready
@@ -54,8 +54,8 @@ Go back to CNC12 Acorn Mill and select `Load (F2)`, it will open a file dialogue
 Press the green `CYCLE START` button to begin the cnc job. You can press `FEED HOLD` to "pause" the job at any time.   
 
 <AssetDisplay
-imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_jobstarted.png"
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_jobstarted.PNG"
 name="CNC job started"
 fileType="PNG (.png)"
-downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_jobstarted.png"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/cnc_jobstarted.PNG"
 />
