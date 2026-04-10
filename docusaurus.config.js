@@ -42,6 +42,9 @@ const config = {
         routeBasePath: "/",
         editUrl:
           "https://github.com/richardson-area-wide-robotics/Robo-Docs/edit/main/",
+
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
       },
     ],
   ],
