@@ -1,6 +1,6 @@
 import AssetDisplay from '@site/src/components/AssetDisplay';
 
-# Exporting parts for CNC/Lazer
+# Exporting parts for CNC/Laser
 
 ## Step 1
 Open your CAD file in Onshape. Make sure you are in the Part Studio (not the Assembly view)
@@ -25,4 +25,4 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
 />
 
 ## Step 3
-Save exported file to a USB drive, and you are done! You now have a DXF you can use for the CNC machine and for the Lazer cutter
+Save exported file to a USB drive, and you are done! You now have a DXF you can use for the CNC machine and for the Laser cutter

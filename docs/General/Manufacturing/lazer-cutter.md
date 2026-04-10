@@ -1,6 +1,6 @@
 import AssetDisplay from '@site/src/components/AssetDisplay';
 
-# Using the Lazer Cutter
+# Using the Laser Cutter
 
 
 ## Powering Up
@@ -14,10 +14,10 @@ The startup sequence MUST be followed in order.
 automatically. If not, turn them on manually
 
 <AssetDisplay
-imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_power_on.jpg"
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_power_on.jpg"
 name="CNC power button"
 fileType="JPG (.jpg)"
-downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_power_on.jpg"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_power_on.jpg"
 />
 
 2. Go to the right side of the laser and flip the main switch so the white arrow points
@@ -25,10 +25,10 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
    are in the image on the left
 
 <AssetDisplay
-imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_power_on_2.jpg"
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_power_on_2.jpg"
 name="CNC power button"
 fileType="JPG (.jpg)"
-downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_power_on_2.jpg"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_power_on_2.jpg"
 />
 
 3. The machine will move as it start's up. This is normal
@@ -49,19 +49,19 @@ load your DXF file.
 3. Hover over your design and click a color swatch at the bottom of the screen to assign it
    to a layer.
 <AssetDisplay
-   imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_setup_lightburn.png"
+   imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_setup_lightburn.png"
    name="CNC power button"
    fileType="JPG (.jpg)"
-   downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_setup_lightburn.png"
+   downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_setup_lightburn.png"
    />
 
 4. In the bottom-right panel, set your cut settings:
 
 <AssetDisplay
-imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_cut_settings.png"
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_cut_settings.png"
 name="CNC power button"
 fileType="JPG (.jpg)"
-downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lazer_cut_settings.png"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/Laser_cut_settings.png"
 />
 
 | Setting   | Value |
