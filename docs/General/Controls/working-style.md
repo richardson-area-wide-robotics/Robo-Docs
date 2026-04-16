@@ -1,11 +1,5 @@
 # Working Style
 
-:::info
-
-Last Updated: 4/9/2026
-
-:::
-
 ## Branch Rules
 
 ### Using Branches
@@ -15,6 +9,10 @@ Use branches!
 When working on a branch, your branch should be named
 
 `{your-GitHub-username}/{times-this-problem-has-been-worked-one}-{feature-or-bug-your-working-on}`
+
+OR, in the event we are at a competition 
+
+`comp/{event-name-from-the-blue-alliance}`
 
 #### Example:
 * `shooter-positons/1-strubium`
