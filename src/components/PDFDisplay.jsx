@@ -1,36 +1,57 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
+
 import DownloadButton from '@site/src/components/DownloadButton';
 import './PDFDisplay.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+    'pdfjs-dist/build/pdf.worker.min.mjs',
+    import.meta.url,
+).toString();
 
 const PDFDisplay = ({
     pdfUrl,
     name = 'Document',
-    height = '700px',
+    height = 700,
 }) => {
+    const [numPages, setNumPages] = useState(null);
     const [page, setPage] = useState(1);
 
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+    }
+
     const nextPage = () => {
-        setPage((prev) => prev + 1);
+        if (page < numPages) {
+            setPage(page + 1);
+        }
     };
 
     const prevPage = () => {
-        setPage((prev) => Math.max(prev - 1, 1));
+        if (page > 1) {
+            setPage(page - 1);
+        }
     };
 
     return (
         <div className="pdf-display">
-            <div className="pdf-viewer-wrapper">
-                <object
-                    data={`${pdfUrl}#page=${page}`}
-                    type="application/pdf"
-                    className="pdf-viewer"
-                    style={{ height }}
+            <div
+                className="pdf-viewer-wrapper"
+                style={{ minHeight: height }}
+            >
+                <Document
+                    file={pdfUrl}
+                    onLoadSuccess={onDocumentLoadSuccess}
+                    loading="Loading PDF..."
                 >
-                    <p>
-                        Your browser does not support PDFs.
-                        <a href={pdfUrl}>Download the PDF</a>.
-                    </p>
-                </object>
+                    <Page
+                        pageNumber={page}
+                        width={900}
+                    />
+                </Document>
             </div>
 
             <div className="pdf-toolbar">
@@ -43,12 +64,13 @@ const PDFDisplay = ({
                 </button>
 
                 <span className="pdf-page-indicator">
-                    Page {page}
+                    Page {page} of {numPages || '--'}
                 </span>
 
                 <button
                     className="pdf-button"
                     onClick={nextPage}
+                    disabled={page === numPages}
                 >
                     Next →
                 </button>
