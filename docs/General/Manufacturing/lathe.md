@@ -1,4 +1,15 @@
+import AssetDisplay from '@site/src/components/AssetDisplay';
+
 # Using the Lathe
+
+
+<AssetDisplay
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/pdf/Autodesk P9_Machining_Manual Lathe.pdf"
+name="CNC power button"
+fileType="PDF (.pdf)"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/pdf/Autodesk P9_Machining_Manual Lathe.pdf"
+/>
+
 
 :::warning
 
