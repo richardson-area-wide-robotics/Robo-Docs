@@ -20,12 +20,17 @@ const PDFDisplay = ({
     return (
         <div className="pdf-display">
             <div className="pdf-viewer-wrapper">
-                <iframe
-                    title={name}
-                    src={`${pdfUrl}#page=${page}`}
+                <object
+                    data={`${pdfUrl}#page=${page}`}
+                    type="application/pdf"
                     className="pdf-viewer"
-                    style={{height}}
-                />
+                    style={{ height }}
+                >
+                    <p>
+                        Your browser does not support PDFs.
+                        <a href={pdfUrl}>Download the PDF</a>.
+                    </p>
+                </object>
             </div>
 
             <div className="pdf-toolbar">
