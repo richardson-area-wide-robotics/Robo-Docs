@@ -9,7 +9,7 @@ const PDFDisplay = require('@site/src/components/PDFDisplay').default;
 
     return (
       <PDFDisplay
-        pdfUrl="/pdf/Autodesk_P9_Machining_Manual_Lathe.pdf"
+        pdfUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/pdf/Autodesk_P9_Machining_Manual_Lathe.pdf"
         name="Autodesk_P9_Machining_Manual_Lathe"
       />
     );
