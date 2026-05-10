@@ -1,16 +1,19 @@
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import PDFDisplay from '@site/src/components/PDFDisplay';
 
 # Using the Lathe
 
 
 <BrowserOnly fallback={<div>Loading PDF viewer...</div>}>
-{() => (
-<PDFDisplay
-pdfUrl="/pdf/Autodesk_P9_Machining_Manual_Lathe.pdf"
-name="Autodesk_P9_Machining_Manual_Lathe"
-/>
-)}
+{() => {
+const PDFDisplay = require('@site/src/components/PDFDisplay').default;
+
+    return (
+      <PDFDisplay
+        pdfUrl="/pdf/Autodesk_P9_Machining_Manual_Lathe.pdf"
+        name="Autodesk_P9_Machining_Manual_Lathe"
+      />
+    );
+}}
 </BrowserOnly>
 
 :::warning
