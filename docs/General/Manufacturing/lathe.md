@@ -1,4 +1,12 @@
+import PDFDisplay from '@site/src/components/PDFDisplay';
+
 # Using the Lathe
+
+
+<PDFDisplay
+pdfUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/pdf/Autodesk_P9_Machining_Manual_Lathe.pdf"
+name="Autodesk_P9_Machining_Manual_Lathe"
+/>
 
 :::warning
 
