@@ -1,20 +1,4 @@
-import BrowserOnly from '@docusaurus/BrowserOnly';
-
 # Using the Lathe
-
-
-<BrowserOnly fallback={<div>Loading PDF viewer...</div>}>
-{() => {
-const PDFDisplay = require('@site/src/components/PDFDisplay').default;
-
-    return (
-      <PDFDisplay
-        pdfUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/pdf/Autodesk_P9_Machining_Manual_Lathe.pdf"
-        name="Autodesk_P9_Machining_Manual_Lathe"
-      />
-    );
-}}
-</BrowserOnly>
 
 :::warning
 
