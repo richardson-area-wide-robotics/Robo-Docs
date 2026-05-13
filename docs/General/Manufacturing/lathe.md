@@ -44,6 +44,24 @@ The tail stock is the part opposite of the head stock housing the spindle that a
 3. The tail stock can also be used to hold drill bits or tapping bits 
 
 ## Carriage
-The carriage holds the tool post and allows it to be moved from side to side and cut into stock pieces on the lathe. It has the ability to move along the z and x-axis from the hand wheels facing the operator 
+The carriage holds the tool post and allows it to be moved from side to side and cut into stock pieces on the lathe. It has the ability to move along the z and x-axis from the hand wheels facing the operator. 
+Compound slide allows for tapers to be made as the assembly can be rotated by untightening the two bolts next to the angle finder
+To move the angle of only the tool untighten the large tool holder lock handle (use a wrench for extra leverage if needed)
+Before making your cuts remember to zero the carriage by twisting the rulers on the hand wheels to your desired value and to check that your cut will not hit the spinning chuck or any other part apart from the tool head that touches the stock.
 
+## Stock
+Common materials have a calculated value, called Surface Feet per Minute or SFM, for the maximum speed that a tool can move through the material, without excessive wear or damage. The SFM is used to calculate the RPM of the spindle and workpiece. RPM is based on the material being cut, the material of the cutting tool and the diameter of the material being cut.
+To convert the SFM to RPM, use the following formula:
+[RPM = 4 X SFM / MATERIAL DIAMETER]
+Example: 2" diameter stainless steel 4 x 50 / 2 = 200 / 2 = 100
 
+RPM Example: 1/2" diameter aluminum 4 x 300 / 0.5 = 1,200 / 0.5 = 2,400 RPM
+
+When using the parting off tool, set the RPM to about 1/4 of the calculated value. When drilling, calculate the RPM based on the drill bit diameter, rather than the workpiece size.
+
+| MATERIAL                                | SFM     |
+|-----------------------------------------|---------|
+| Hard Steel (stainless, tool steel, etc) | 50-60   | 
+| Mild Steel (regular steel)              | 100-125 | 
+| Brass                                   | 150-200 |
+| Aluminum                                | 250-350 |

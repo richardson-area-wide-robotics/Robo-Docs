@@ -3,7 +3,7 @@ import AssetDisplay from '@site/src/components/AssetDisplay';
 # Exporting parts for CNC/Laser
 
 ## Step 1
-Open your CAD file in Onshape. Make sure you are in the Part Studio (not the Assembly view)
+Open your CAD file in [Onshape](https://www.onshape.com/en/). Make sure you are in the Part Studio (not the Assembly view)
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/dxf_export_step_1.png"
