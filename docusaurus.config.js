@@ -35,26 +35,20 @@ const config = {
   onBrokenLinks: "warn",
 
   // --- Docs Plugin ---
-  plugins: [
+  presets: [
     [
-      "@docusaurus/plugin-content-docs",
+      "@docusaurus/preset-classic",
       {
-        routeBasePath: "/",
-        editUrl:
-          "https://github.com/richardson-area-wide-robotics/Robo-Docs/edit/main/",
-
+        docs: {
+          routeBasePath: "/",
+          editUrl:
+            "https://github.com/richardson-area-wide-robotics/Robo-Docs/edit/main/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-      },
-    ],
-  ],
-
-  // --- Themes ---
-  themes: [
-    [
-      "@docusaurus/theme-classic",
-      {
-        customCss: "./src/css/custom.css",
+        },
+        theme: {
+          customCss: "./src/css/custom.css",
+        },
       },
     ],
   ],

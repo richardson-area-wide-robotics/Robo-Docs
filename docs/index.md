@@ -1,4 +1,4 @@
-import DocsCarousel from '@site/src/components/AssetDisplay';
+import DocsCarousel from '@site/src/components/DocsCarousel';
 
 
 # Robo Docs

@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
-import { useAllDocsData } from "@docusaurus/plugin-content-docs/client";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useDocsSidebar } from "@docusaurus/plugin-content-docs/client";
 
 function getTextColor(bgColor) {
   const hex = bgColor.replace("#", "");
@@ -20,38 +21,28 @@ function shuffle(array) {
 const colors = ["#2563EB", "#16A34A", "#DC2626", "#9333EA"];
 
 export default function DocsCarousel() {
-  const allDocsData = useAllDocsData();
+  const { siteConfig } = useDocusaurusContext();
 
-  // Get docs from the first docs plugin instance
-  const docsPlugin = Object.values(allDocsData)[0];
+  // SAFE: always defined in SSR
+  const sidebar = useDocsSidebar();
 
-  const allDocs = useMemo(() => {
-    const versions = docsPlugin?.versions || [];
+  const pages = useMemo(() => {
+    const items = sidebar?.items || [];
 
-    // take latest version
-    const latestVersion = versions[0];
+    // flatten sidebar items safely
+    const docs = items
+      .filter((i) => i.type === "doc")
+      .map((i) => ({
+        title: i.label,
+        link: i.href,
+        description: "Open documentation page",
+      }))
+      .filter((d) => d.link);
 
-    const docs = latestVersion?.docs || [];
+    return shuffle(docs).slice(0, 4);
+  }, [sidebar]);
 
-    return docs
-      .filter((d) => d?.permalink && d?.title)
-      .map((d) => ({
-        title: d.title,
-        link: d.permalink,
-        description: d.description || "Open documentation page",
-      }));
-  }, [docsPlugin]);
-
-  const randomPages = useMemo(() => {
-    return shuffle(allDocs)
-      .slice(0, 4)
-      .map((page, i) => ({
-        ...page,
-        color: colors[i % colors.length],
-      }));
-  }, [allDocs]);
-
-  if (!randomPages.length) {
+  if (!pages.length) {
     return <p>No docs found.</p>;
   }
 
@@ -64,15 +55,16 @@ export default function DocsCarousel() {
         marginTop: "24px",
       }}
     >
-      {randomPages.map((page) => {
-        const textColor = getTextColor(page.color);
+      {pages.map((page, i) => {
+        const color = colors[i % colors.length];
+        const textColor = getTextColor(color);
 
         return (
           <a
             key={page.link}
             href={page.link}
             style={{
-              backgroundColor: page.color,
+              backgroundColor: color,
               color: textColor,
               padding: "20px",
               borderRadius: "12px",
