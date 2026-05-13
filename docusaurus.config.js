@@ -140,6 +140,6 @@ const config = {
       isCloseable: true,
     },
   },
-};u
+};
 
 export default config;
