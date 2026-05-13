@@ -8,7 +8,7 @@ import AssetDisplay from '@site/src/components/AssetDisplay';
 To slice models for printing on a Bambu Lab device, it is recommended to use [Orca Slicer](https://orca-slicer.com/)
 
 ### Prepare
-The prepare tab is where you import models and change settings about the print.
+The prepare tab is where you import models and change settings about the print, like Infill or Supports.
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/orca_prepare.png"
@@ -20,7 +20,7 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
 Press `Slice All` to slice the model and go to the Preview Tab
 
 ### Preview
-The preview tab is where you can look at the sliced model. You can still change settings, but it will return you to the prepare tab and you will need to reslice to go back 
+The preview tab is where you can look at the sliced model. You can still change settings, but it will return you to the Prepare tab, and you will need to reslice to go back. You can see the total time for the print, along with a breakdown of each section
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/orca_preview.png"
