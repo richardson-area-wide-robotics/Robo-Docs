@@ -1,3 +1,6 @@
+import DocsCarousel from '@site/src/components/AssetDisplay';
+
+
 # Robo Docs
 
 Welcome to **Robo Docs**, the technical documentation for the Richardson Area Wide Robotics
@@ -5,3 +8,4 @@ Welcome to **Robo Docs**, the technical documentation for the Richardson Area Wi
 If you're new or contributing for the first time, start here.
 
 
+<DocsCarousel />
