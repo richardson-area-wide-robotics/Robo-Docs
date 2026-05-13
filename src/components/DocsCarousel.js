@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import useGlobalData from "@docusaurus/useGlobalData";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function getTextColor(bgColor) {
   const hex = bgColor.replace("#", "");
@@ -13,40 +13,36 @@ function getTextColor(bgColor) {
   return luminance > 186 ? "#000000" : "#FFFFFF";
 }
 
-function shuffleArray(array) {
+function shuffle(array) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-const colors = [
-  "#2563EB",
-  "#16A34A",
-  "#DC2626",
-  "#9333EA",
-  "#EA580C",
-  "#0891B2",
-];
+const colors = ["#2563EB", "#16A34A", "#DC2626", "#9333EA"];
 
 export default function DocsCarousel() {
-  const globalData = useGlobalData();
+  const { siteConfig } = useDocusaurusContext();
 
-  // Pull docs data from Docusaurus
-  const docsPlugin =
-    globalData["docusaurus-plugin-content-docs"]?.default;
+  // Docusaurus exposes all routes here safely during build
+  const allRoutes = siteConfig.customFields?.allDocs || [];
 
-  const docs = docsPlugin?.versions?.[0]?.docs || [];
+  // fallback if not configured (prevents crash)
+  const safeRoutes = Array.isArray(allRoutes) ? allRoutes : [];
 
   const randomPages = useMemo(() => {
-    return shuffleArray(docs)
+    return shuffle(safeRoutes)
+      .filter((r) => r?.path && r?.title)
       .slice(0, 4)
-      .map((doc, index) => ({
-        title: doc.title,
-        description:
-          doc.description ||
-          "Click to read more about this topic.",
-        link: doc.path,
-        color: colors[index % colors.length],
+      .map((r, i) => ({
+        title: r.title,
+        link: r.path,
+        description: r.description || "Open documentation page",
+        color: colors[i % colors.length],
       }));
-  }, [docs]);
+  }, [safeRoutes]);
+
+  if (!randomPages.length) {
+    return <p>No docs found.</p>;
+  }
 
   return (
     <div
@@ -70,49 +66,20 @@ export default function DocsCarousel() {
               padding: "20px",
               borderRadius: "12px",
               textDecoration: "none",
-              minHeight: "160px",
+              minHeight: "140px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
-              transition: "transform 0.2s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-4px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
             }}
           >
             <div>
-              <h2
-                style={{
-                  margin: 0,
-                  marginBottom: "10px",
-                  fontSize: "1.25rem",
-                }}
-              >
-                {page.title}
-              </h2>
-
-              <p
-                style={{
-                  margin: 0,
-                  opacity: 0.9,
-                  lineHeight: 1.5,
-                }}
-              >
+              <h3 style={{ margin: 0 }}>{page.title}</h3>
+              <p style={{ marginTop: 8, opacity: 0.9 }}>
                 {page.description}
               </p>
             </div>
 
-            <span
-              style={{
-                marginTop: "16px",
-                fontWeight: "bold",
-              }}
-            >
-              Read More →
-            </span>
+            <strong>Read →</strong>
           </a>
         );
       })}
