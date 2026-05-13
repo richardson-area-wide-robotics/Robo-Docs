@@ -19,10 +19,7 @@ const colors = ["#2563EB", "#16A34A", "#DC2626", "#9333EA"];
 export default function DocsCarousel() {
   const allDocsData = useAllDocsData();
 
-  console.log("[DocsCarousel] allDocsData:", allDocsData);
-
   const pages = useMemo(() => {
-    console.log("[DocsCarousel] useMemo triggered");
 
     if (!allDocsData || typeof allDocsData !== "object") {
       console.warn("[DocsCarousel] Invalid allDocsData");
@@ -32,24 +29,15 @@ export default function DocsCarousel() {
     const pluginIds = Object.keys(allDocsData);
     const pluginId = pluginIds[0];
 
-    console.log("[DocsCarousel] pluginIds:", pluginIds);
-    console.log("[DocsCarousel] selected pluginId:", pluginId);
-
     const pluginData = allDocsData?.[pluginId];
-    console.log("[DocsCarousel] pluginData:", pluginData);
 
     const docsArray =
       pluginData?.versions?.[0]?.docs;
-
-    console.log("[DocsCarousel] docsArray:", docsArray);
 
     if (!Array.isArray(docsArray)) {
       console.warn("[DocsCarousel] docsArray is missing or not an array");
       return [];
     }
-
-    console.log("[DocsCarousel] docsArray length:", docsArray.length);
-    console.log("[DocsCarousel] sample doc:", docsArray[0]);
 
     const pages = shuffle(docsArray)
       .filter((doc) => doc?.id && doc?.path)
