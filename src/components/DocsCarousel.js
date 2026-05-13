@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useAllDocsData } from "@docusaurus/plugin-content-docs/client";
 
 function getTextColor(bgColor) {
   const hex = bgColor.replace("#", "");
@@ -20,25 +20,36 @@ function shuffle(array) {
 const colors = ["#2563EB", "#16A34A", "#DC2626", "#9333EA"];
 
 export default function DocsCarousel() {
-  const { siteConfig } = useDocusaurusContext();
+  const allDocsData = useAllDocsData();
 
-  // Docusaurus exposes all routes here safely during build
-  const allRoutes = siteConfig.customFields?.allDocs || [];
+  // Get docs from the first docs plugin instance
+  const docsPlugin = Object.values(allDocsData)[0];
 
-  // fallback if not configured (prevents crash)
-  const safeRoutes = Array.isArray(allRoutes) ? allRoutes : [];
+  const allDocs = useMemo(() => {
+    const versions = docsPlugin?.versions || [];
+
+    // take latest version
+    const latestVersion = versions[0];
+
+    const docs = latestVersion?.docs || [];
+
+    return docs
+      .filter((d) => d?.permalink && d?.title)
+      .map((d) => ({
+        title: d.title,
+        link: d.permalink,
+        description: d.description || "Open documentation page",
+      }));
+  }, [docsPlugin]);
 
   const randomPages = useMemo(() => {
-    return shuffle(safeRoutes)
-      .filter((r) => r?.path && r?.title)
+    return shuffle(allDocs)
       .slice(0, 4)
-      .map((r, i) => ({
-        title: r.title,
-        link: r.path,
-        description: r.description || "Open documentation page",
+      .map((page, i) => ({
+        ...page,
         color: colors[i % colors.length],
       }));
-  }, [safeRoutes]);
+  }, [allDocs]);
 
   if (!randomPages.length) {
     return <p>No docs found.</p>;
