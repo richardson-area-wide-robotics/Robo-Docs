@@ -1,4 +1,5 @@
 import AssetDisplay from '@site/src/components/AssetDisplay';
+import VideoPlayer from '@site/src/components/VideoPlayer';
 
 # Using the Laser Cutter
 
@@ -98,10 +99,14 @@ plywood using the arrow keys on the control panel
    cutter front panel.
 3. Press Start in LightBurn and watch your part cut
 
-:::info
 
-Need help with LightBurn?
+### Need help with LightBurn?
+Watch this video for a full walkthrough. For the original video, [Click Here](https://youtu.be/8JXYt9FmUao?si=jShiIjHcua18irpI)
 
-Watch this video for a full walkthrough: [Click Here](https://youtu.be/8JXYt9FmUao?si=jShiIjHcua18irpI)
-
-:::
+<VideoPlayer
+videoSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/vid/Lightburn_101_Beginner_Tutorial_for_2025.mp4"
+poster="/img/logo.png"
+name="LightBurn Tutorial Video"
+fileType="Video (.mp4)"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/vid/Lightburn_101_Beginner_Tutorial_for_2025.mp4"
+/>

@@ -30,7 +30,7 @@ NEVER use compressed air to clean, as metal chips can become stuck inside the â€
 
 3. Make sure chuck guard is lowered
 4. Make sure your stock is safely secured to the chuck
-5. Remove yellow cover from power switch
+5. Remove yellow cover from power switch (Show below)
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_power_cover.jpg"
@@ -40,7 +40,7 @@ downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Rob
 />
 
 6. Check speed that the lathe is running at.
-7. Press green button to power on and start spinning the chuck
+7. Press green button to power on and start spinning the chuck (Show below)
 
 <AssetDisplay
 imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_power_switch.jpg"
