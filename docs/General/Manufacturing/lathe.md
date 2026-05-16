@@ -1,4 +1,14 @@
+import AssetDisplay from '@site/src/components/AssetDisplay';
+
 # Using the Lathe
+The Lathe is a powerful machine that can do some cool things.
+
+<AssetDisplay
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_full.jpg"
+name="The Lathe"
+fileType="JPG (.jpg)"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_full.jpg"
+/>
 
 :::warning
 
@@ -21,8 +31,24 @@ NEVER use compressed air to clean, as metal chips can become stuck inside the â€
 3. Make sure chuck guard is lowered
 4. Make sure your stock is safely secured to the chuck
 5. Remove yellow cover from power switch
+
+<AssetDisplay
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_power_cover.jpg"
+name="Lathe Power Cover"
+fileType="JPG (.jpg)"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_power_cover.jpg"
+/>
+
 6. Check speed that the lathe is running at.
 7. Press green button to power on and start spinning the chuck
+
+<AssetDisplay
+imgSrc="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_power_switch.jpg"
+name="Lathe Power Switch"
+fileType="JPG (.jpg)"
+downloadUrl="https://raw.githubusercontent.com/richardson-area-wide-robotics/Robo-Docs/main/static/img/lathe_power_switch.jpg"
+/>
+
    
 ## Tool Heads
 1. When first placing a tool head into tool post make sure that it is far enough from the lathe to where you will not hurt yourself unscrewing the bolts
